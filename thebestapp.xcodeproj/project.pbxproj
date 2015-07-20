@@ -77,11 +77,8 @@
 		BF6C3D231B594FDD00FD4EFB /* thebestapp */ = {
 			isa = PBXGroup;
 			children = (
-				BF6C3D261B594FDD00FD4EFB /* AppDelegate.swift */,
 				BF6C3D281B594FDD00FD4EFB /* ViewController.swift */,
 				BF6C3D2A1B594FDD00FD4EFB /* Main.storyboard */,
-				BF6C3D2D1B594FDD00FD4EFB /* Images.xcassets */,
-				BF6C3D2F1B594FDD00FD4EFB /* LaunchScreen.xib */,
 				BF6C3D241B594FDD00FD4EFB /* Supporting Files */,
 			);
 			path = thebestapp;
@@ -90,6 +87,9 @@
 		BF6C3D241B594FDD00FD4EFB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BF6C3D261B594FDD00FD4EFB /* AppDelegate.swift */,
+				BF6C3D2D1B594FDD00FD4EFB /* Images.xcassets */,
+				BF6C3D2F1B594FDD00FD4EFB /* LaunchScreen.xib */,
 				BF6C3D251B594FDD00FD4EFB /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -409,6 +409,7 @@
 				BF6C3D421B594FDD00FD4EFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF6C3D431B594FDD00FD4EFB /* Build configuration list for PBXNativeTarget "thebestappTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +418,7 @@
 				BF6C3D451B594FDD00FD4EFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
