@@ -21,9 +21,41 @@ class ViewController: UIViewController {
         }
     }
     
+    var operandStack = Array<Double>()
+    
     @IBAction func enter() {
         userIsInMiddleofTypingANumber  = false
+        operandStack.append(displayValue)
+        println("operandStack = \(operandStack)")
+    }
+    
+    @IBAction func operand(sender: UIButton) {
+        let operation = sender.currentTitle!
+        if userIsInMiddleofTypingANumber{
+            enter()
+        }
+        switch operation{
+            case "✖️":
+                if operandStack.count >= 2{
+                    displayValue = operandStack.removeLast() * operandStack.removeLast()
+                    enter()
+            }
+//            case "➗":
+//            case "➕":
+//            case "➖":
+            default: break
+            
+        }
+    }
+    var displayValue: Double {
+        get{
+            return NSNumberFormatter().numberFromString(display.text!)!.doubleValue
+        }
         
+        set{
+            display.text = "\(newValue)"
+            userIsInMiddleofTypingANumber = false
+        }
     }
 
 }
