@@ -9,8 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
     @IBOutlet weak var display: UILabel!
+    
     var userIsInMiddleofTypingANumber : Bool = false
+    
+    var brain = CalculatorBrain()
+    
     @IBAction func appendDigit(sender: UIButton) {
         let digit = sender.currentTitle!
         if userIsInMiddleofTypingANumber{
@@ -22,28 +27,31 @@ class ViewController: UIViewController {
     }
     
     @IBAction func operate(sender: UIButton) {
-        let operation = sender.currentTitle!
-        switch operation{
-            case "✖️":
-                if operandStack.count >= 2{
-                    displayValue = operandStack.removeLast() * operandStack.removeLast()
-                    enter()
-                }
-//            case "➗":
-//            case "➕":
-//            case "➖":
-            default: break
+        
+        if userIsInMiddleofTypingANumber {
+            enter()
         }
+        if let operation = sender.currentTitle {
+            if let result = brain.performOperation(operation) {
+                displayValue = result
+            } else {
+                displayValue = 0
+            }
+        }
+        
     }
-    
-    var operandStack = Array<Double>()
+
     
     @IBAction func enter() {
         userIsInMiddleofTypingANumber = false
-        operandStack.append(displayValue)
-        println("operandStack = \(operandStack)")
+        if let result = brain.pushOperand(displayValue){
+            displayValue = result
+        } else {
+            displayValue = 0
+        }
+        
     }
-    
+
     var displayValue: Double {
         get{
             return NSNumberFormatter().numberFromString(display.text!)!.doubleValue
@@ -54,5 +62,13 @@ class ViewController: UIViewController {
         }
     }
     
+    
+    
+    
+    
+    
+    
+         
+        
 }
 
