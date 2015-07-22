@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     
     var brain = CalculatorBrain()
     
+
     @IBAction func appendDigit(sender: UIButton) {
         let digit = sender.currentTitle!
         if userIsInMiddleofTypingANumber{
@@ -51,24 +52,15 @@ class ViewController: UIViewController {
         }
         
     }
-
     var displayValue: Double {
         get{
             return NSNumberFormatter().numberFromString(display.text!)!.doubleValue
         }
+        
         set{
             display.text = "\(newValue)"
-            userIsInMiddleofTypingANumber   = false
         }
     }
-    
-    
-    
-    
-    
-    
-    
-         
-        
+ 
 }
 

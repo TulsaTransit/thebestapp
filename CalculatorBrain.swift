@@ -21,10 +21,10 @@ class CalculatorBrain
     private var knownOps = [String:Op]()
     
     init(){
-        knownOps["✕"] = Op.BinaryOperation("✕", *)
-        knownOps["÷"] = Op.BinaryOperation("÷") {$0 / $1}
+        knownOps["×"] = Op.BinaryOperation("×", *)
+        knownOps["÷"] = Op.BinaryOperation("÷") { $1 / $0 }
         knownOps["+"] = Op.BinaryOperation("+", +)
-        knownOps["−"] = Op.BinaryOperation("−") {$0 - $1}
+        knownOps["−"] = Op.BinaryOperation("−") { $1 - $0 }
         knownOps["√"] = Op.UnaryOperation("√", sqrt)
         
     }

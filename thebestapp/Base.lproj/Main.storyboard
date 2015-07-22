@@ -133,35 +133,33 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="enter" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yEV-h8-CrG"/>
-                                    <action selector="enter:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qE9-Vm-cYZ"/>
-                                    <action selector="operate:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZZw-T3-Xae"/>
+                                    <action selector="enter" destination="vXZ-lx-hvc" eventType="touchUpInside" id="VoL-hJ-vUr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utP-Jh-r8k">
                                 <rect key="frame" x="221" y="87" width="64" height="64"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="✖️">
+                                <state key="normal" title="×">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="operate:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wVE-VH-pqD"/>
+                                    <action selector="operate:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Bsg-vY-1Xa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGc-7Z-6Re">
                                 <rect key="frame" x="221" y="159" width="64" height="64"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="➗">
+                                <state key="normal" title="÷">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="operate:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KFK-Ib-8E7"/>
+                                    <action selector="operate:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rgH-Pv-HCf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99e-in-kng">
                                 <rect key="frame" x="221" y="231" width="64" height="64"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="➕">
+                                <state key="normal" title="+">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -171,11 +169,11 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2U-ma-44J">
                                 <rect key="frame" x="221" y="303" width="64" height="64"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="➖">
+                                <state key="normal" title="−">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="operate:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eoN-Nh-uvW"/>
+                                    <action selector="operate:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="b7t-bR-3DD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -192,7 +190,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="287" y="387"/>
+            <point key="canvasLocation" x="673" y="360"/>
         </scene>
     </scenes>
 </document>
